@@ -6,8 +6,17 @@
 <body> 
   <h1> Data Analyzer:</h1>
   <section>
-    <h3> Statistics Calculator </h3>
-    <input type="text">
+    <h3> Basic Statistics Calculator </h3>
+    <input type="text" id="BSC_Input"> <button onclick='FormatData(document.getElementById("BSC_Input").innerHTML)'> </button>
+    <span id="BSC_Output"> </span>
   </section> 
+
+<script> 
+
+function FormatData(a) {
+  document.getElementById("BSC_Output").innerHTML = a
+}
+  
+</script>
 </body>
 </html>
