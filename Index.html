@@ -9,12 +9,12 @@
   <section>
     <h3> Basic Statistics Calculator </h3>
     <input type="text" id="BSC_Input"> <button onclick='FormatData(document.getElementById("BSC_Input").value)'> </button>
-    <span id="BSC_Output"> </span>
+    <span id="BSC_Output"> Calculate Avg. </span>
   </section> 
 
 <script> 
 function FormatData(a) {
-  document.getElementById("BSC_Output").innerHTML = a
+  mySpan = document.getElementById("BSC_Output").innerHTML;
 }
 </script>
 </body>
