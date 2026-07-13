@@ -6,7 +6,7 @@
   
 <body> 
   <h1> Data Analyzer:</h1>
-  <section>
+  <section style="background-color: darkslategrey; color: white;">
     <h3> Basic Statistics Calculator </h3>
     <input type="text" id="BSC_Input"> <button onclick='FormatData(document.getElementById("BSC_Input").value)'> </button>
     <span id="BSC_Output"> Calculate Avg. </span>
@@ -14,7 +14,8 @@
 
 <script> 
 function FormatData(a) {
-  mySpan = document.getElementById("BSC_Output").innerHTML;
+  mySpan = document.getElementById("BSC_Output");
+  mySpan.innerHTML = a;
 }
 </script>
 </body>
