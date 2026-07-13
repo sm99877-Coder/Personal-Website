@@ -1,21 +1,24 @@
 <html> 
 <head>
   <link rel="stylesheet" href="style.css" />
-  <link rel="script" href="DataAnalyzer.js">
+  <!-- <link rel="script" href="DataAnalyzer.js">     Scripts not yet attached.-->
 </head>
   
 <body> 
   <h1> Data Analyzer:</h1>
   <section style="background-color: darkslategrey; color: white;">
     <h3> Basic Statistics Calculator </h3>
-    <input type="text" id="BSC_Input"> <button onclick='FormatData(document.getElementById("BSC_Input").value)'> </button>
+    <input type="text" id="BSC_In"> <button onclick='FormatData("BSC_In")'> </button>
     <span id="BSC_Output"> Calculate Avg. </span>
   </section> 
 
 <script> 
 function FormatData(a) {
+  a = document.getElementById(a);
+
   mySpan = document.getElementById("BSC_Output");
   mySpan.innerHTML = a;
+
 }
 </script>
 </body>
